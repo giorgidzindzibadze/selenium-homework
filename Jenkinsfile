@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Checkout your branch
-                    checkout([$class: 'GitSCM', branches: [[name: 'main']], userRemoteConfigs: [[url: 'https://github.com/giorgidzindzibadze/Project2.git']]])
+                    checkout([$class: 'GitSCM', branches: [[name: 'main']], userRemoteConfigs: [[url: 'https://github.com/giorgidzindzibadze/selenium-homework.git']]])
                 }
             }
         }
