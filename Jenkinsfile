@@ -16,8 +16,8 @@ pipeline {
                 stage('Run Maven Project') {
                     steps {
                         script {
-                            // Run Maven build
-                            sh 'mvn clean install'
+                            // Run Maven build using bat
+                            bat 'mvn clean install'
                         }
                     }
                 }
@@ -25,8 +25,8 @@ pipeline {
                 stage('Get Maven Version') {
                     steps {
                         script {
-                            // Get Maven version
-                            sh 'mvn --version'
+                            // Get Maven version using bat
+                            bat 'mvn --version'
                         }
                     }
                 }
